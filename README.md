@@ -15,7 +15,7 @@ This project aims to provide a solution for retrieving the evolution chain and v
 1. Clone the repository:
 
    ```shell
-   git clone https://github.com/your-username/poke-evolution-chain.git
+   git clone https://github.com/nitinmaram/poke-evolution-chain
    ```
 
 2. Install the dependencies:
@@ -41,7 +41,7 @@ To retrieve the evolution chain information for a Pokémon, make a GET request t
 GET /evolution-chain/:pokemonName
 ```
 
-Replace `:pokemonName` with the name of the Pokémon you want to retrieve the evolution chain for.
+Replace `:pokemonName` with the name of the Pokémon you want to retrieve the evolution chain for(eg. pikachu).
 
 The server will respond with a JSON object representing the evolution chain and variations of the Pokémon.
 
