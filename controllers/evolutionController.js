@@ -7,7 +7,6 @@ export const getEvolutionChain = async (req, res) => {
 
     // Fetch the evolution chain
     const evolutionChain = await fetchEvolutionChain(pokemonName);
-
     if (!evolutionChain) {
       return res.status(404).json({ error: 'Pokemon not found.' });
     }
@@ -48,7 +47,6 @@ export const fetchEvolutionChain = async (pokemonName) => {
     if (!evolutionChainData) {
       return null;
     }
-
     // Extract the evolution chain
     const evolutionChain = extractEvolutionChain(evolutionChainData.chain);
 
